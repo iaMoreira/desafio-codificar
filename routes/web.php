@@ -25,7 +25,9 @@ Route::group(['middleware'=>'auth'],function (){
     |--------------------------------------------------------------------------
     */
     Route::get('dashboard','HomeController@index')->name('dashboard');
-
+    
+    Route::resource('deputado','DeputadoController');
+    Route::get('deputado/show','DeputadoController@show');
 
 });
 

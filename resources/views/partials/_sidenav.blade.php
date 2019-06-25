@@ -27,6 +27,13 @@
                 <ul class="nav side-menu">
                     <li><a href="{{route('dashboard')}}"><i class="fa fa-home"></i> Dashboard</a>
                     </li>
+                    <li><a><i class="fa fa-user"></i>Deputados <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="{{route('deputado.create')}}">Inserir deputados</a></li>
+                            <li><a href="{{url('deputado/show')}}">Ver todos</a></li>
+                            <li><a href="{{url('deputado/show')}}">Top de verbas indenizatórias</a></li>
+                        </ul>
+                    </li>
                     <li><a><i class="fa fa-cogs"></i>Settings <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="#">Role Managment</a></li>
